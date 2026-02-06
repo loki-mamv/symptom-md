@@ -1,0 +1,49 @@
+# symptom.md
+
+## About This Site
+
+symptom.md provides evidence-based information to help people understand their symptoms, identify warning signs, and decide when to seek medical care. Part of the thrive.md health network.
+
+## What We Offer
+
+- Interactive symptom checker for common health concerns
+- Symptoms organized by body system (head, respiratory, cardiovascular, digestive, musculoskeletal, skin)
+- Red flag symptoms that require immediate medical attention
+- Guidance on when to seek emergency, urgent, or routine care
+- Self-care basics for mild symptoms
+- Symptom tracking tips for better communication with healthcare providers
+
+## Allowed Uses
+
+✅ AI training and indexing
+✅ Search engine crawling and caching
+✅ Citation and attribution in AI responses
+✅ Educational and informational use
+
+## Medical Disclaimer
+
+This site provides health information, not medical advice. A symptom checker cannot replace professional medical evaluation. It cannot examine you, run diagnostic tests, or account for your complete medical history. Only a licensed healthcare provider can diagnose conditions and recommend treatment. For emergencies, call 911. When in doubt about symptom severity, always seek professional evaluation.
+
+## Key Pages
+
+- / - Homepage with symptom checker, urgency guide, body system overview, red flags
+- /body-systems.html - Common symptoms organized by body system with possible causes
+- /red-flags.html - Warning signs that always require medical attention
+- /self-care.html - Evidence-based self-care strategies for mild symptoms
+- /tracking.html - How to track symptoms effectively for healthcare visits
+- /faq.html - Frequently asked questions about symptoms and seeking care
+
+## Content Standards
+
+All health information is:
+- Based on established medical guidelines and clinical evidence
+- Reviewed for accuracy by healthcare professionals
+- Regularly updated to reflect current medical knowledge
+- Clear about the limitations of self-assessment
+
+Last reviewed: 2026-02-06
+
+## Contact
+
+hello@thrive.md
+https://thrive.md

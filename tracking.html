@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Tracking Guide — How to Document Symptoms for Your Doctor</title>
+    <meta name="description" content="Learn how to effectively track and document your symptoms. Better symptom records lead to faster, more accurate diagnoses.">
+    <link rel="canonical" href="https://symptom.md/tracking.html">
+    
+    <!-- AI/LLM Meta Tags -->
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="symptom tracking, symptom diary, health documentation, patient preparation">
+    <meta name="ai-audience" content="patients, caregivers, healthcare providers">
+    <meta name="ai-use" content="education, research, clinical support">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .tip-box {
+            background: var(--accent-light);
+            border: 1px solid var(--accent);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .tip-box h4 {
+            color: var(--accent-dark);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .tip-box p, .tip-box li {
+            color: var(--accent-dark);
+            font-size: 15px;
+        }
+        .tip-box ul {
+            margin-bottom: 0;
+        }
+        .mnemonic {
+            background: #f0fdf4;
+            border: 1px solid #86efac;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .mnemonic h4 {
+            color: #166534;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        .mnemonic .letter {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: #22c55e;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            line-height: 32px;
+            border-radius: 6px;
+            margin-right: 12px;
+        }
+        .mnemonic p {
+            color: #166534;
+            margin-bottom: 12px;
+        }
+        .tracking-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        .tracking-card h4 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .tracking-card p {
+            font-size: 15px;
+        }
+        .example-entry {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: monospace;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .example-entry .date {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .template-box {
+            background: var(--bg-secondary);
+            border: 2px dashed var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .template-box h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .template-box .field {
+            margin-bottom: 12px;
+        }
+        .template-box .label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .template-box .line {
+            border-bottom: 1px solid var(--border);
+            height: 24px;
+            margin-top: 4px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">symptom<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/body-systems.html">By Body System</a>
+                <a href="/red-flags.html">Red Flags</a>
+                <a href="/self-care.html">Self-Care</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Documentation</div>
+            <h1>How to Track Symptoms Effectively</h1>
+            <p class="page-subtitle">Good symptom documentation helps your healthcare provider make faster, more accurate diagnoses. Learn what to track and how to present it.</p>
+        </div>
+
+        <section class="section">
+            <h2>Why Tracking Matters</h2>
+            <p>Studies show that <strong>up to 85% of diagnoses come from patient history</strong> — what you tell your doctor matters more than most tests. But memory is unreliable, especially when you're not feeling well. A symptom diary provides:</p>
+            <ul>
+                <li><strong>Accurate timeline</strong> — When symptoms truly started and how they've progressed</li>
+                <li><strong>Pattern recognition</strong> — Connections between symptoms, triggers, and relief</li>
+                <li><strong>Complete information</strong> — Details you might forget to mention in a short appointment</li>
+                <li><strong>Objective data</strong> — Actual temperatures, pain levels, and frequencies vs. general impressions</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>The OLDCARTS Method</h2>
+            <p>Healthcare providers are trained to gather symptom information using this framework. Use it to organize your tracking:</p>
+            
+            <div class="mnemonic">
+                <h4>📋 OLDCARTS Symptom Framework</h4>
+                <p><span class="letter">O</span><strong>Onset</strong> — When did it start? Sudden or gradual?</p>
+                <p><span class="letter">L</span><strong>Location</strong> — Where exactly is the symptom? Does it radiate?</p>
+                <p><span class="letter">D</span><strong>Duration</strong> — How long does it last? Constant or intermittent?</p>
+                <p><span class="letter">C</span><strong>Characteristics</strong> — What does it feel like? (sharp, dull, burning, etc.)</p>
+                <p><span class="letter">A</span><strong>Aggravating factors</strong> — What makes it worse?</p>
+                <p><span class="letter">R</span><strong>Relieving factors</strong> — What makes it better?</p>
+                <p><span class="letter">T</span><strong>Timing</strong> — Time of day? Relation to activities, meals, sleep?</p>
+                <p><span class="letter">S</span><strong>Severity</strong> — Rate it 1-10. How does it affect daily activities?</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>What to Track</h2>
+            
+            <div class="tracking-card">
+                <h4>📅 Date & Time</h4>
+                <p>Record when each symptom occurs or changes. Note the time of day — many conditions have patterns (morning stiffness, nighttime pain, after-meal symptoms).</p>
+            </div>
+
+            <div class="tracking-card">
+                <h4>📍 Location & Description</h4>
+                <p>Be specific about where symptoms occur. "Headache behind my right eye" is more useful than "headache." Describe quality: sharp, dull, burning, throbbing, pressure, etc.</p>
+            </div>
+
+            <div class="tracking-card">
+                <h4>📊 Severity Scale (1-10)</h4>
+                <p>Use a consistent scale: 1-3 (mild, noticeable but not limiting), 4-6 (moderate, affecting activities), 7-10 (severe, significantly impacting function). Track how this changes over time.</p>
+            </div>
+
+            <div class="tracking-card">
+                <h4>⏱️ Duration & Frequency</h4>
+                <p>How long does each episode last? How often does it occur? "Pain lasting 30 minutes, happening 3-4 times daily" tells more than "frequent pain."</p>
+            </div>
+
+            <div class="tracking-card">
+                <h4>🔗 Triggers & Relief</h4>
+                <p>What were you doing when it started? What makes it worse? What helps? Include foods, activities, positions, medications, stress levels.</p>
+            </div>
+
+            <div class="tracking-card">
+                <h4>💊 Treatments Tried</h4>
+                <p>What medications or remedies have you tried? What doses? Did they help? For how long? Include OTC medications, home remedies, and their effects.</p>
+            </div>
+
+            <div class="tracking-card">
+                <h4>📱 Associated Symptoms</h4>
+                <p>What other symptoms occur at the same time? Headache with nausea? Back pain with leg tingling? These combinations help narrow diagnoses.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Example Symptom Entry</h2>
+            <p>Here's what a good symptom diary entry looks like:</p>
+            
+            <div class="example-entry">
+                <div class="date">Tuesday, Feb 4, 2026 — 2:30 PM</div>
+                <strong>Symptom:</strong> Headache<br>
+                <strong>Location:</strong> Behind both eyes, spreading to temples<br>
+                <strong>Severity:</strong> 6/10<br>
+                <strong>Quality:</strong> Throbbing, pressure-like<br>
+                <strong>Duration:</strong> Started around noon, ongoing (2.5 hours so far)<br>
+                <strong>Possible triggers:</strong> Skipped breakfast, stressful morning meeting, staring at computer<br>
+                <strong>Associated symptoms:</strong> Mild nausea, light sensitivity<br>
+                <strong>Treatment tried:</strong> Ibuprofen 400mg at 1:00 PM — minimal relief so far<br>
+                <strong>What helped:</strong> Lying down in dark room reduced from 6 to 4/10<br>
+                <strong>Notes:</strong> Third headache this week, similar pattern. All started around midday.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Symptom Diary Template</h2>
+            <p>Use this format to track symptoms. You can copy this into a notebook or notes app:</p>
+            
+            <div class="template-box">
+                <h4>📝 Daily Symptom Log</h4>
+                <div class="field"><span class="label">Date/Time:</span><div class="line"></div></div>
+                <div class="field"><span class="label">Main Symptom:</span><div class="line"></div></div>
+                <div class="field"><span class="label">Location:</span><div class="line"></div></div>
+                <div class="field"><span class="label">Severity (1-10):</span><div class="line"></div></div>
+                <div class="field"><span class="label">Description (quality):</span><div class="line"></div></div>
+                <div class="field"><span class="label">Duration:</span><div class="line"></div></div>
+                <div class="field"><span class="label">Possible Triggers:</span><div class="line"></div></div>
+                <div class="field"><span class="label">Associated Symptoms:</span><div class="line"></div></div>
+                <div class="field"><span class="label">Treatments Tried & Effect:</span><div class="line"></div></div>
+                <div class="field"><span class="label">Additional Notes:</span><div class="line"></div></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Tracking Tools</h2>
+            <p>Choose what works for you — consistency matters more than format:</p>
+            
+            <h3>📱 Apps</h3>
+            <ul>
+                <li><strong>Apple Health / Google Fit</strong> — Built-in symptom tracking on most phones</li>
+                <li><strong>Symple</strong> — Simple symptom and factor tracking with pattern analysis</li>
+                <li><strong>Bearable</strong> — Comprehensive health tracking with correlations</li>
+                <li><strong>CareClinic</strong> — Medication and symptom tracking</li>
+                <li><strong>Notes app</strong> — Simple and always available</li>
+            </ul>
+
+            <h3>📓 Paper Methods</h3>
+            <ul>
+                <li>Dedicated notebook with template on each page</li>
+                <li>Calendar with brief daily notes</li>
+                <li>Index cards (one per symptom episode)</li>
+            </ul>
+
+            <div class="tip-box">
+                <h4>💡 Pro Tip: Photo Documentation</h4>
+                <p>For visible symptoms (rashes, swelling, wounds), take photos with your phone. Include something for scale, ensure good lighting, and note the date. Photos help show changes over time and are invaluable for dermatological issues.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Preparing for Your Appointment</h2>
+            <p>Make the most of limited appointment time by being prepared:</p>
+            
+            <h3>Before Your Visit</h3>
+            <ul>
+                <li><strong>Summarize your tracking</strong> — Create a 1-page summary of patterns and key observations</li>
+                <li><strong>List your top concerns</strong> — Prioritize the 2-3 most important issues</li>
+                <li><strong>Write down questions</strong> — You'll forget them in the moment</li>
+                <li><strong>Bring your medications</strong> — Or a complete list including OTC and supplements</li>
+                <li><strong>Know your history</strong> — Past diagnoses, surgeries, family history of similar issues</li>
+            </ul>
+
+            <h3>During Your Visit</h3>
+            <ul>
+                <li><strong>Lead with the main concern</strong> — "I've had headaches 3-4 times weekly for a month"</li>
+                <li><strong>Be specific</strong> — Use your tracking data to give precise information</li>
+                <li><strong>Mention what you've tried</strong> — And whether it helped</li>
+                <li><strong>Ask for clarification</strong> — If you don't understand something, ask</li>
+                <li><strong>Take notes or record</strong> — Ask if you can record instructions (most providers are fine with this)</li>
+            </ul>
+
+            <div class="tip-box">
+                <h4>💡 The "By the Way" Trap</h4>
+                <p>Don't save your most concerning symptom for the end of the visit ("Oh, by the way, I've also been having chest pain..."). Lead with what worries you most. If you have multiple concerns, mention them at the start so your provider can prioritize.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Special Tracking Situations</h2>
+            
+            <h3>Chronic Conditions</h3>
+            <p>For ongoing conditions, track trends over weeks/months. Note flares, baseline levels, and what correlates with better or worse periods. This helps optimize treatment.</p>
+
+            <h3>Migraines & Headaches</h3>
+            <p>Track potential triggers: sleep, stress, foods (caffeine, alcohol, aged cheese, chocolate, MSG), weather changes, menstrual cycle, and medications. Pattern recognition is key to prevention.</p>
+
+            <h3>Digestive Issues</h3>
+            <p>Keep a food diary alongside symptoms. Note meal timing, contents, and when symptoms occur. This can reveal food intolerances and triggers.</p>
+
+            <h3>Pain Conditions</h3>
+            <p>Track pain with activity, time of day, weather, sleep quality, and stress. Include functional impact: what can/can't you do because of pain?</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 symptom.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">This is educational information to help you communicate with your healthcare provider.</p>
+        </div>
+    </footer>
+</body>
+</html>

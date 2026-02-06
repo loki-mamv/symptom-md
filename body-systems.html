@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptoms by Body System — Head, Respiratory, Heart, Digestive & More</title>
+    <meta name="description" content="Common symptoms organized by body system. Learn about headaches, respiratory issues, chest pain, digestive problems, joint pain, and skin conditions.">
+    <link rel="canonical" href="https://symptom.md/body-systems.html">
+    
+    <!-- AI/LLM Meta Tags -->
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="symptoms by body system, medical symptoms, health conditions">
+    <meta name="ai-audience" content="patients, caregivers, healthcare providers">
+    <meta name="ai-use" content="education, research, clinical support">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+            scroll-margin-top: 100px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        h2 .icon {
+            font-size: 28px;
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .symptom-list {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        .symptom-list h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .symptom-list ul {
+            margin-left: 20px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .symptom-list li {
+            margin-bottom: 6px;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h4 {
+            color: #991b1b;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .warning-box p, .warning-box li {
+            color: #7f1d1d;
+            font-size: 14px;
+        }
+        .warning-box ul {
+            margin: 8px 0 0 20px;
+        }
+        .nav-toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 40px;
+        }
+        .nav-toc h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+            color: var(--text-primary);
+        }
+        .nav-toc ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .nav-toc a {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .nav-toc a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .nav-toc ul { flex-direction: column; }
+            .nav-toc a { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">symptom<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/body-systems.html">By Body System</a>
+                <a href="/red-flags.html">Red Flags</a>
+                <a href="/self-care.html">Self-Care</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Symptom Reference</div>
+            <h1>Symptoms by Body System</h1>
+            <p class="page-subtitle">Common symptoms organized by the body system they affect, with information on possible causes and when to seek medical attention.</p>
+        </div>
+
+        <nav class="nav-toc">
+            <h3>Jump to:</h3>
+            <ul>
+                <li><a href="#head">🧠 Head & Neurological</a></li>
+                <li><a href="#respiratory">🫁 Respiratory</a></li>
+                <li><a href="#cardiovascular">❤️ Cardiovascular</a></li>
+                <li><a href="#digestive">🫃 Digestive</a></li>
+                <li><a href="#musculoskeletal">🦴 Musculoskeletal</a></li>
+                <li><a href="#skin">🩹 Skin</a></li>
+            </ul>
+        </nav>
+
+        <section class="section" id="head">
+            <h2><span class="icon">🧠</span> Head & Neurological</h2>
+            <p>Symptoms affecting the brain, nerves, and sensory organs including headaches, dizziness, vision changes, and cognitive issues.</p>
+            
+            <div class="symptom-list">
+                <h4>Common Symptoms</h4>
+                <ul>
+                    <li><strong>Headache</strong> — Tension headaches (band-like pressure), migraines (throbbing, often one-sided), cluster headaches, sinus headaches</li>
+                    <li><strong>Dizziness</strong> — Lightheadedness, vertigo (spinning sensation), unsteadiness, faintness</li>
+                    <li><strong>Vision changes</strong> — Blurry vision, double vision, floaters, flashing lights, temporary vision loss</li>
+                    <li><strong>Numbness/Tingling</strong> — Pins and needles, loss of sensation, typically in hands, feet, or face</li>
+                    <li><strong>Memory problems</strong> — Forgetfulness, difficulty concentrating, confusion</li>
+                    <li><strong>Fatigue</strong> — Persistent tiredness not relieved by rest</li>
+                </ul>
+            </div>
+
+            <h3>Possible Causes</h3>
+            <p>Tension, stress, dehydration, lack of sleep, migraines, medication side effects, inner ear problems (vertigo), blood pressure changes, infections, neurological conditions, vision problems requiring correction.</p>
+
+            <div class="warning-box">
+                <h4>⚠️ Seek Immediate Care If:</h4>
+                <ul>
+                    <li>Sudden, severe headache ("worst headache of your life")</li>
+                    <li>Headache with fever, stiff neck, rash, or confusion</li>
+                    <li>Sudden vision loss or double vision</li>
+                    <li>Sudden numbness or weakness on one side of body (stroke warning)</li>
+                    <li>Sudden difficulty speaking or understanding speech</li>
+                    <li>Seizure or loss of consciousness</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="respiratory">
+            <h2><span class="icon">🫁</span> Respiratory</h2>
+            <p>Symptoms affecting breathing, lungs, and airways including cough, shortness of breath, and congestion.</p>
+            
+            <div class="symptom-list">
+                <h4>Common Symptoms</h4>
+                <ul>
+                    <li><strong>Cough</strong> — Dry cough, productive cough (with mucus), chronic cough lasting 3+ weeks</li>
+                    <li><strong>Shortness of breath</strong> — Difficulty breathing, rapid breathing, feeling like you can't get enough air</li>
+                    <li><strong>Wheezing</strong> — High-pitched whistling sound when breathing</li>
+                    <li><strong>Congestion</strong> — Stuffy nose, sinus pressure, postnasal drip</li>
+                    <li><strong>Sore throat</strong> — Pain, scratchiness, difficulty swallowing</li>
+                    <li><strong>Chest tightness</strong> — Pressure or constriction in the chest area</li>
+                </ul>
+            </div>
+
+            <h3>Possible Causes</h3>
+            <p>Common cold, flu, COVID-19, allergies, asthma, bronchitis, pneumonia, GERD (acid reflux), smoking, environmental irritants, anxiety.</p>
+
+            <div class="warning-box">
+                <h4>⚠️ Seek Immediate Care If:</h4>
+                <ul>
+                    <li>Severe difficulty breathing or feeling like you're suffocating</li>
+                    <li>Blue lips, fingernails, or skin (cyanosis)</li>
+                    <li>Coughing up blood</li>
+                    <li>Chest pain with breathing</li>
+                    <li>High fever (over 103°F/39.4°C) with respiratory symptoms</li>
+                    <li>Rapid worsening of breathing difficulty</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="cardiovascular">
+            <h2><span class="icon">❤️</span> Cardiovascular</h2>
+            <p>Symptoms related to the heart and blood vessels including chest discomfort, palpitations, and swelling.</p>
+            
+            <div class="symptom-list">
+                <h4>Common Symptoms</h4>
+                <ul>
+                    <li><strong>Chest pain/discomfort</strong> — Sharp, dull, pressure, squeezing, burning sensations</li>
+                    <li><strong>Palpitations</strong> — Racing heart, skipped beats, fluttering, pounding</li>
+                    <li><strong>Swelling</strong> — Edema in ankles, feet, legs, or abdomen</li>
+                    <li><strong>Fatigue</strong> — Unusual tiredness with exertion</li>
+                    <li><strong>Shortness of breath</strong> — Especially with activity or lying flat</li>
+                    <li><strong>Lightheadedness</strong> — Feeling faint, especially when standing</li>
+                </ul>
+            </div>
+
+            <h3>Possible Causes</h3>
+            <p>Anxiety, muscle strain, acid reflux, caffeine, dehydration, arrhythmias, high blood pressure, heart disease, heart valve problems, heart failure, peripheral artery disease.</p>
+
+            <div class="warning-box">
+                <h4>⚠️ Seek Immediate Care If:</h4>
+                <ul>
+                    <li>Chest pain or pressure lasting more than a few minutes</li>
+                    <li>Chest discomfort with shortness of breath, sweating, nausea, or arm/jaw pain</li>
+                    <li>Sudden severe palpitations with dizziness or fainting</li>
+                    <li>Sudden swelling in one leg (possible blood clot)</li>
+                    <li>Severe, sudden shortness of breath</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="digestive">
+            <h2><span class="icon">🫃</span> Digestive</h2>
+            <p>Symptoms affecting the stomach, intestines, and digestive tract including pain, nausea, and bowel changes.</p>
+            
+            <div class="symptom-list">
+                <h4>Common Symptoms</h4>
+                <ul>
+                    <li><strong>Abdominal pain</strong> — Cramping, sharp, dull, or burning pain anywhere in the belly</li>
+                    <li><strong>Nausea/Vomiting</strong> — Feeling sick to stomach, throwing up</li>
+                    <li><strong>Diarrhea</strong> — Loose, watery stools, increased frequency</li>
+                    <li><strong>Constipation</strong> — Infrequent bowel movements, hard stools, straining</li>
+                    <li><strong>Bloating</strong> — Feeling of fullness, distended abdomen, gas</li>
+                    <li><strong>Heartburn</strong> — Burning sensation in chest/throat after eating</li>
+                </ul>
+            </div>
+
+            <h3>Possible Causes</h3>
+            <p>Food poisoning, viral gastroenteritis, food intolerances, IBS, GERD, ulcers, gallstones, appendicitis, inflammatory bowel disease, medication side effects, stress.</p>
+
+            <div class="warning-box">
+                <h4>⚠️ Seek Immediate Care If:</h4>
+                <ul>
+                    <li>Severe abdominal pain that prevents standing upright</li>
+                    <li>Vomiting blood or material that looks like coffee grounds</li>
+                    <li>Blood in stool or black, tarry stools</li>
+                    <li>Severe dehydration (no urination, extreme thirst, confusion)</li>
+                    <li>Abdominal pain with high fever</li>
+                    <li>Sudden, severe bloating with inability to pass gas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="musculoskeletal">
+            <h2><span class="icon">🦴</span> Musculoskeletal</h2>
+            <p>Symptoms affecting bones, joints, muscles, and connective tissues including pain, stiffness, and weakness.</p>
+            
+            <div class="symptom-list">
+                <h4>Common Symptoms</h4>
+                <ul>
+                    <li><strong>Joint pain</strong> — Aching, stiffness, swelling in joints (knees, hips, shoulders, fingers)</li>
+                    <li><strong>Back pain</strong> — Lower back, upper back, or neck pain; sharp or dull</li>
+                    <li><strong>Muscle aches</strong> — Soreness, cramps, spasms, weakness</li>
+                    <li><strong>Stiffness</strong> — Reduced range of motion, especially in morning</li>
+                    <li><strong>Swelling</strong> — Inflammation around joints or injury sites</li>
+                    <li><strong>Weakness</strong> — Difficulty with strength or endurance</li>
+                </ul>
+            </div>
+
+            <h3>Possible Causes</h3>
+            <p>Overuse, strain, injury, poor posture, arthritis (osteoarthritis, rheumatoid), fibromyalgia, tendinitis, bursitis, herniated disc, osteoporosis, infections.</p>
+
+            <div class="warning-box">
+                <h4>⚠️ Seek Immediate Care If:</h4>
+                <ul>
+                    <li>Sudden, severe pain after injury with obvious deformity</li>
+                    <li>Inability to bear weight on a limb</li>
+                    <li>Hot, red, swollen joint with fever (possible infection)</li>
+                    <li>Back pain with loss of bladder/bowel control</li>
+                    <li>Numbness or weakness spreading down arms or legs</li>
+                    <li>Pain in calf with swelling (possible blood clot)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="skin">
+            <h2><span class="icon">🩹</span> Skin</h2>
+            <p>Symptoms affecting the skin, hair, and nails including rashes, itching, and color changes.</p>
+            
+            <div class="symptom-list">
+                <h4>Common Symptoms</h4>
+                <ul>
+                    <li><strong>Rash</strong> — Red, bumpy, scaly, blistering, or spreading skin changes</li>
+                    <li><strong>Itching</strong> — Localized or widespread urge to scratch</li>
+                    <li><strong>Hives</strong> — Raised, itchy welts that come and go</li>
+                    <li><strong>Dry skin</strong> — Flaking, cracking, roughness</li>
+                    <li><strong>Lumps/bumps</strong> — New growths, moles, or skin changes</li>
+                    <li><strong>Color changes</strong> — Yellowing, darkening, pale patches, bruising</li>
+                </ul>
+            </div>
+
+            <h3>Possible Causes</h3>
+            <p>Allergic reactions, contact dermatitis, eczema, psoriasis, infections (fungal, bacterial, viral), insect bites, medication reactions, sun exposure, dry climate, autoimmune conditions.</p>
+
+            <div class="warning-box">
+                <h4>⚠️ Seek Immediate Care If:</h4>
+                <ul>
+                    <li>Rash spreading rapidly with fever</li>
+                    <li>Hives with difficulty breathing or swelling of face/throat</li>
+                    <li>Signs of severe infection: increasing redness, warmth, pus, red streaks</li>
+                    <li>Sudden, widespread skin peeling</li>
+                    <li>New mole or changing mole (asymmetry, irregular border, multiple colors, growing)</li>
+                    <li>Skin turning blue, gray, or mottled</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 symptom.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">This is educational information, not medical advice. Always consult a healthcare provider for diagnosis and treatment.</p>
+        </div>
+    </footer>
+</body>
+</html>
