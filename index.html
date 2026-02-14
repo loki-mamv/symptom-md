@@ -1323,6 +1323,14 @@
                     }
                 }
                 
+                
+                // Track query (client-side)
+                fetch('https://mikes-mac-mini.platy-paradise.ts.net:18791/api/track', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'X-API-Key': '3460683416d20694dc8f05cdb01af378' },
+                    body: JSON.stringify({ site: 'symptom.md', query: question, response: (fullText || fullResponse || '').slice(0, 500), session_id: SESSION_ID || null }),
+                }).catch(() => {});
+
                 await new Promise(resolve => {
                     const checkDone = () => {
                         if (renderQueue.length === 0 && !isRendering) {
