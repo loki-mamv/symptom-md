@@ -1,186 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-PLACEHOLDER');
+  gtag('config', 'G-6H85DH0R8S');
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - symptom.md</title>
-    <meta name="description" content="Evidence-based articles about health topics from symptom.md.">
+    <title>Blog — symptom.md</title>
+    <meta name="description" content="Evidence-based articles about symptoms from the thrive.md health network. Expert-reviewed, cited sources.">
     <link rel="canonical" href="https://symptom.md/blog/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://symptom.md/blog/">
+    <meta property="og:title" content="Blog — symptom.md">
+    <meta property="og:description" content="Evidence-based articles about symptoms from the thrive.md health network.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blog — symptom.md">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Blog — symptom.md",
+      "url": "https://symptom.md/blog/",
+      "isPartOf": {"@id": "https://symptom.md/#website"},
+      "about": {"@type": "Thing", "name": "symptoms"},
+      "publisher": {"@type": "Organization", "name": "thrive.md Editorial Team", "url": "https://thrive.md"}
+    }
+    </script>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #ffffff; --bg-secondary: #f8fafc; --bg-tertiary: #f1f5f9;
-            --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #94a3b8;
-            --accent: #0d9488; --accent-dark: #0f766e; --accent-light: #ccfbf1;
-            --border: #e2e8f0;
+            --bg-primary: #ffffff; --bg-secondary: #f8fafc; --text-primary: #0f172a;
+            --text-secondary: #475569; --text-muted: #94a3b8; --accent: #0d9488;
+            --accent-dark: #0f766e; --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: var(--font-body); background: var(--bg-primary);
-            color: var(--text-primary); line-height: 1.7; font-size: 16px;
-        }
-        header {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-            background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
-        }
-        .header-inner {
-            max-width: 1100px; margin: 0 auto; padding: 16px 24px;
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .logo {
-            font-family: var(--font-display); font-size: 22px; font-weight: 600;
-            color: var(--text-primary); text-decoration: none;
-        }
-        .logo span { color: var(--accent); }
-        nav { display: flex; gap: 32px; }
-        nav a {
-            color: var(--text-secondary); text-decoration: none;
-            font-size: 14px; font-weight: 500; transition: color 0.2s;
-        }
-        nav a:hover { color: var(--accent); }
-        main {
-            max-width: 900px; margin: 0 auto; padding: 120px 24px 64px;
-        }
-        .page-header { margin-bottom: 48px; }
-        .page-eyebrow {
-            font-size: 13px; font-weight: 600; color: var(--accent);
-            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;
-        }
-        h1 {
-            font-family: var(--font-display);
-            font-size: clamp(32px, 5vw, 42px);
-            font-weight: 700; line-height: 1.2; margin-bottom: 16px;
-        }
-        .page-subtitle {
-            font-size: 18px; color: var(--text-secondary); line-height: 1.6;
-        }
-        .articles-grid {
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 24px;
-        }
-        .article-card {
-            display: block; text-decoration: none; color: inherit;
-            background: var(--bg-primary); border: 1px solid var(--border);
-            border-radius: 12px; padding: 28px; transition: all 0.2s;
-        }
-        .article-card:hover {
-            border-color: var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            transform: translateY(-2px);
-        }
-        .card-eyebrow {
-            font-size: 12px; font-weight: 600; color: var(--accent);
-            text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
-        }
-        .article-card h2 {
-            font-family: var(--font-display); font-size: 20px; font-weight: 700;
-            line-height: 1.3; margin-bottom: 10px; color: var(--text-primary);
-        }
-        .article-card p {
-            font-size: 15px; color: var(--text-secondary); line-height: 1.6;
-            margin-bottom: 16px;
-        }
-        .read-more {
-            font-size: 14px; font-weight: 600; color: var(--accent);
-        }
-        footer {
-            background: var(--bg-secondary); border-top: 1px solid var(--border);
-            padding: 48px 24px; margin-top: 80px;
-        }
-        .footer-inner {
-            max-width: 1100px; margin: 0 auto; text-align: center;
-            font-size: 14px; color: var(--text-muted);
-        }
-        @media (max-width: 768px) {
-            nav { display: none; }
-            main { padding: 100px 16px 40px; }
-        }
+        body { font-family: var(--font-body); background: #fafaf9; color: var(--text-primary); line-height: 1.7; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-dark); text-decoration: underline; }
+        .site-header { border-bottom: 1px solid var(--border); padding: 1rem 0; background: #fff; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; }
+        .site-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--accent); }
+        .site-nav a { margin-left: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+        .blog-header { padding: 3rem 0 2rem; }
+        .blog-header h1 { font-family: var(--font-display); font-size: 2rem; }
+        .blog-header p { color: var(--text-secondary); margin-top: 0.5rem; }
+        .post-list { list-style: none; }
+        .post-item { padding: 1.5rem 0; border-bottom: 1px solid var(--border); }
+        .post-item:last-child { border-bottom: none; }
+        .post-item a { color: var(--text-primary); }
+        .post-item a:hover { color: var(--accent); }
+        .post-item h2 { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .post-item p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .post-meta { font-size: 0.8rem; color: var(--text-muted); display: flex; gap: 1rem; }
+        .cross-links { margin: 3rem 0; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; }
+        .cross-links h3 { font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-secondary); }
+        .cross-links-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .cross-links-list a { padding: 0.35rem 0.75rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); background: #fff; }
+        .cross-links-list a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+        .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 2rem; text-align: center; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .footer-links a { font-size: 0.8rem; color: var(--text-muted); }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+        @media (max-width: 640px) { .blog-header h1 { font-size: 1.5rem; } }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <a href="../index.html" class="logo">symptom<span>.md</span></a>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="../body-systems.html">By Body System</a>
-                <a href="../red-flags.html">Red Flags</a>
-                <a href="../self-care.html">Self-Care</a>
-                <a href="../blog/">Articles</a>
-                <a href="../faq.html">FAQ</a>
+    <header class="site-header">
+        <div class="container">
+            <a href="https://symptom.md/" class="site-logo">symptom.md</a>
+            <nav class="site-nav">
+                <a href="https://symptom.md/">Home</a>
+                <a href="https://symptom.md/blog/">Blog</a>
             </nav>
         </div>
     </header>
-
-    <main>
-        <div class="page-header">
-            <div class="page-eyebrow">Articles</div>
-            <h1>Health Articles & Guides</h1>
-            <p class="page-subtitle">Evidence-based articles written for patients, reviewed against current medical guidelines.</p>
+    <main class="container">
+        <div class="blog-header">
+            <h1>symptom.md Blog</h1>
+            <p>Evidence-based articles about symptoms, reviewed by our editorial team.</p>
         </div>
+        <ul class="post-list">
+            <li class="post-item"><a href="/blog/when-to-see-doctor-warning-signs/"><h2>When to See a Doctor: 10 Warning Signs You Shouldn't Ignore</h2></a><p>Not every symptom needs a doctor visit, but some are red flags that require prompt evaluation. Learn which warning signs shouldn't wait.</p><div class="post-meta"><time>2026-02-14</time><span>4 min read</span></div></li>
 
-        <div class="articles-grid">
-
-            <a href="symptom-checker-limitations.html" class="article-card">
-                <div class="card-eyebrow">Digital Health</div>
-                <h2>The Limitations of Online Symptom Checkers: What You Need to Know</h2>
-                <p>What online symptom checkers get right, what they get wrong, and when to trust them.</p>
-                <span class="read-more">Read article</span>
-            </a>
-
-            <a href="when-to-see-a-doctor.html" class="article-card">
-                <div class="card-eyebrow">Urgent Care</div>
-                <h2>When to See a Doctor: Symptoms You Should Never Ignore</h2>
-                <p>Recognizing warning signs that require medical attention versus symptoms that can wait.</p>
-                <span class="read-more">Read article</span>
-            </a>
-
-            <a href="commonly-misdiagnosed-conditions.html" class="article-card">
-                <div class="card-eyebrow">Diagnosis</div>
-                <h2>Commonly Misdiagnosed Conditions: Why Getting the Right Diagnosis Takes Time</h2>
-                <p>Medical conditions that are frequently missed or misdiagnosed, and how to advocate for yourself.</p>
-                <span class="read-more">Read article</span>
-            </a>
-
-            <a href="health-anxiety-guide.html" class="article-card">
-                <div class="card-eyebrow">Mental Health</div>
-                <h2>Health Anxiety: When Worry About Illness Becomes the Problem</h2>
-                <p>Understanding health anxiety, how it differs from normal concern, and strategies for managing it.</p>
-                <span class="read-more">Read article</span>
-            </a>
-
-            <a href="red-flag-symptoms.html" class="article-card">
-                <div class="card-eyebrow">Emergency Guide</div>
-                <h2>Red Flag Symptoms: Warning Signs That Need Immediate Attention</h2>
-                <p>Warning signs across body systems that require urgent medical evaluation.</p>
-                <span class="read-more">Read article</span>
-            </a>
-
-            <a href="symptom-journaling-guide.html" class="article-card">
-                <div class="card-eyebrow">Self-Care Tools</div>
-                <h2>Symptom Journaling: How to Track Your Health for Better Medical Care</h2>
-                <p>A practical guide to tracking symptoms in a way that helps your doctor help you.</p>
-                <span class="read-more">Read article</span>
-            </a>
-
+        </ul>
+        <div class="cross-links">
+            <h3>Explore Related Health Topics</h3>
+            <div class="cross-links-list">
+                <a href="https://thrive.md/blog/">thrive.md</a>
+                <a href="https://anxiety.md/blog/">anxiety.md</a>
+                <a href="https://depression.md/blog/">depression.md</a>
+                <a href="https://ptsd.md/blog/">ptsd.md</a>
+                <a href="https://bipolar.md/blog/">bipolar.md</a>
+                <a href="https://ocd.md/blog/">ocd.md</a>
+                <a href="https://insomnia.md/blog/">insomnia.md</a>
+                <a href="https://ozempic.md/blog/">ozempic.md</a>
+                <a href="https://hypertension.md/blog/">hypertension.md</a>
+            </div>
         </div>
     </main>
-
-    <footer>
-        <div class="footer-inner">
-            <p>&copy; 2026 symptom.md &middot; Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
-            <p style="margin-top: 8px; font-size: 12px;">Information based on published clinical guidelines. This is not medical advice.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://depression.md">depression.md</a>
+                <a href="https://ozempic.md">ozempic.md</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 symptom.md — Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
         </div>
     </footer>
 </body>
