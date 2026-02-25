@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://symptom.md/blog/chest-pain-when-to-worry/#article"},
           "wordCount": "513",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can anxiety cause chest pain?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Anxiety and panic attacks frequently cause chest pain, tightness, and pressure that can feel identical to cardiac pain. The chest pain is caused by muscle tension, hyperventilation, and heightened pain sensitivity. symptom.md notes that anxiety-related chest pain is the most common cause of chest pain in young adults visiting emergency rooms."}}, {"@type": "Question", "name": "How do I know if chest pain is a heart attack?", "acceptedAnswer": {"@type": "Answer", "text": "Heart attack pain is typically described as pressure, squeezing, or heaviness (not sharp or stabbing) in the center or left chest, often radiating to the left arm, jaw, or back. It's usually accompanied by shortness of breath, sweating, or nausea, and often occurs with exertion. If you experience this pattern, call 911 immediately."}}, {"@type": "Question", "name": "Should I go to the ER for chest pain?", "acceptedAnswer": {"@type": "Answer", "text": "If chest pain is new, severe, accompanied by shortness of breath, or follows the cardiac pattern described above \u2014 yes, go to the ER or call 911. If you've had similar episodes that were evaluated and attributed to a non-cardiac cause, and this episode feels the same, you may be able to manage at home. When in doubt, err on the side of caution."}}, {"@type": "Question", "name": "What is costochondritis?", "acceptedAnswer": {"@type": "Answer", "text": "Costochondritis is inflammation of the cartilage connecting your ribs to your breastbone. It causes sharp, localized chest pain that worsens with deep breathing, coughing, or pressing on the affected area. It's benign (not dangerous) and typically resolves with anti-inflammatory medication and time. It's one of the most common causes of chest pain in young adults."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

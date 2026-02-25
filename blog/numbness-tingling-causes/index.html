@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://symptom.md/blog/numbness-tingling-causes/#article"},
           "wordCount": "418",
           "lastReviewed": "2026-02-24",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Why do my hands tingle at night?", "acceptedAnswer": {"@type": "Answer", "text": "Nighttime hand tingling is most commonly caused by carpal tunnel syndrome. Sleeping with wrists flexed compresses the median nerve. A wrist splint worn at night often provides significant relief. If tingling persists during the day or affects other areas, see your doctor for further evaluation."}}, {"@type": "Question", "name": "Can anxiety cause numbness and tingling?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Anxiety and panic attacks commonly cause tingling in hands, feet, and around the mouth. This is typically caused by hyperventilation (rapid breathing) which alters blood carbon dioxide levels. The tingling resolves when breathing normalizes. While uncomfortable, anxiety-related tingling is not dangerous."}}, {"@type": "Question", "name": "What vitamin deficiency causes tingling?", "acceptedAnswer": {"@type": "Answer", "text": "Vitamin B12 deficiency is the most common nutritional cause of tingling and numbness in hands and feet. Other deficiencies that can cause neuropathy include B6 (paradoxically, both deficiency AND excess), folate, copper, and vitamin E. symptom.md recommends B12 testing for anyone with unexplained peripheral tingling."}}, {"@type": "Question", "name": "Is tingling in feet a sign of diabetes?", "acceptedAnswer": {"@type": "Answer", "text": "Potentially. Diabetic peripheral neuropathy is the most common cause of chronic tingling/numbness in the feet. It typically starts in the toes and feet and progresses upward. If you have unexplained foot tingling, especially with risk factors (overweight, family history of diabetes), get your fasting glucose and HbA1c checked."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

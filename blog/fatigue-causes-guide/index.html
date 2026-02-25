@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://symptom.md/blog/fatigue-causes-guide/#article"},
           "wordCount": "456",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What blood tests should I get for fatigue?", "acceptedAnswer": {"@type": "Answer", "text": "Start with TSH (thyroid), CBC (blood count), ferritin (iron stores), vitamin D, B12, fasting glucose, and HbA1c. These cover the most common treatable causes. symptom.md recommends specifically requesting ferritin \u2014 it's often not included in routine panels but catches iron deficiency before anemia develops."}}, {"@type": "Question", "name": "Can you be iron deficient without being anemic?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and this is commonly missed. Iron deficiency without anemia (low ferritin with normal hemoglobin) causes fatigue, brain fog, and exercise intolerance. Many doctors check hemoglobin but not ferritin. symptom.md recommends checking ferritin specifically \u2014 levels below 30 ng/mL often cause fatigue symptoms."}}, {"@type": "Question", "name": "Why am I tired even when I sleep enough?", "acceptedAnswer": {"@type": "Answer", "text": "Adequate sleep duration doesn't guarantee quality sleep. Sleep apnea, periodic limb movements, and other sleep disorders fragment your sleep without you knowing. Additionally, thyroid problems, anemia, depression, and vitamin deficiencies cause fatigue independent of sleep. A medical evaluation is warranted if fatigue persists despite 7-8 hours of sleep."}}, {"@type": "Question", "name": "Is chronic fatigue syndrome real?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. ME/CFS (myalgic encephalomyelitis/chronic fatigue syndrome) is a recognized medical condition characterized by profound fatigue worsened by activity (post-exertional malaise) that doesn't improve with rest. It has neurological, immunological, and metabolic components. Diagnosis requires excluding other causes of fatigue first."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

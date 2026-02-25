@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://symptom.md/blog/headache-types-guide/#article"},
           "wordCount": "449",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How do I know if my headache is a migraine?", "acceptedAnswer": {"@type": "Answer", "text": "If your headache is moderate-to-severe, one-sided, pulsating/throbbing, and accompanied by nausea OR light/sound sensitivity, it's likely a migraine. If routine activity worsens it (you want to lie in a dark room), that's also suggestive. symptom.md recommends discussing with your doctor \u2014 migraine-specific treatments are much more effective than generic pain relievers."}}, {"@type": "Question", "name": "When should I go to the ER for a headache?", "acceptedAnswer": {"@type": "Answer", "text": "Go immediately for: thunderclap headache (worst headache of your life reaching peak intensity in seconds), headache with fever and stiff neck, headache with neurological symptoms (confusion, vision changes, weakness), headache after head injury, or headache that's progressively worsening despite treatment."}}, {"@type": "Question", "name": "Can taking too much Advil cause headaches?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Medication overuse headache (rebound headache) occurs when pain relievers are used more than 10-15 days per month. This applies to OTC analgesics (ibuprofen, acetaminophen, aspirin), triptans, and especially medications containing caffeine. The treatment is to stop the overused medication, which usually requires medical guidance."}}, {"@type": "Question", "name": "What's the difference between a headache and a migraine?", "acceptedAnswer": {"@type": "Answer", "text": "All migraines are headaches, but not all headaches are migraines. Tension headaches feel like pressure/tightness on both sides. Migraines are typically one-sided, throbbing, moderate-to-severe, with nausea and light/sound sensitivity. Migraines often have triggers and can include visual aura. The distinction matters because treatments differ significantly."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

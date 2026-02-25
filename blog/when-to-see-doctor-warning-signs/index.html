@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://symptom.md/blog/when-to-see-doctor-warning-signs/#article"},
           "wordCount": "888",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Should I go to the ER or my primary care doctor?", "acceptedAnswer": {"@type": "Answer", "text": "ER for: chest pain, sudden severe headache, difficulty breathing, stroke symptoms (face drooping, arm weakness, speech difficulty), heavy bleeding, or high fever with confusion. Primary care for: persistent but non-emergency symptoms like fatigue, weight loss, chronic pain, or gradual changes. Urgent care fills the middle ground \u2014 infections, minor injuries, moderate symptoms that can't wait for a PCP appointment."}}, {"@type": "Question", "name": "How do I know if I'm being a hypochondriac?", "acceptedAnswer": {"@type": "Answer", "text": "Seeking evaluation for concerning symptoms isn't hypochondria \u2014 it's responsible health behavior. Health anxiety becomes problematic when it's constant, disproportionate to symptoms, and persists despite medical reassurance. If you're worried about one specific symptom, getting it checked is reasonable. If you're constantly worried about multiple potential diseases, that pattern itself may benefit from treatment."}}, {"@type": "Question", "name": "What screenings should I be getting regularly?", "acceptedAnswer": {"@type": "Answer", "text": "For average-risk adults: blood pressure annually, cholesterol every 4-6 years (starting at 20), diabetes screening (at 35 or earlier with risk factors), colorectal cancer screening (at 45), mammograms (at 40), cervical cancer screening (21-65), and lung cancer screening (50-80 with significant smoking history). Your primary care doctor can personalize this based on your risk factors."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -249,6 +254,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
