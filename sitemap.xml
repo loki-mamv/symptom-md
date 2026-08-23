@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://symptom.md/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://symptom.md/blog/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://symptom.md/blog/when-to-see-doctor-warning-signs/</loc><lastmod>2026-02-14</lastmod><priority>0.7</priority></url>
-  <url><loc>https://symptom.md/blog/chest-pain-when-to-worry/</loc><lastmod>2026-02-17</lastmod><priority>0.7</priority></url>
-  <url><loc>https://symptom.md/blog/headache-types-guide/</loc><lastmod>2026-02-18</lastmod><priority>0.7</priority></url>
-  <url><loc>https://symptom.md/blog/fatigue-causes-guide/</loc><lastmod>2026-02-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/</loc><lastmod>2026-08-14</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://symptom.md/blog/</loc><lastmod>2026-08-23</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://symptom.md/about.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://symptom.md/body-systems.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://symptom.md/faq.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://symptom.md/red-flags.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://symptom.md/self-care.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://symptom.md/tracking.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://symptom.md/blog/abdominal-pain-guide/</loc><lastmod>2026-02-20</lastmod><priority>0.7</priority></url>
-  <url><loc>https://symptom.md/blog/numbness-tingling-causes/</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
-  <url><loc>https://symptom.md/blog/night-sweats-causes-when-to-worry/</loc><lastmod>2026-08-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/chest-pain-when-to-worry/</loc><lastmod>2026-02-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/commonly-misdiagnosed-conditions.html</loc><lastmod>2026-08-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://symptom.md/blog/dizzy-when-standing-up/</loc><lastmod>2026-08-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/fatigue-causes-guide/</loc><lastmod>2026-02-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/headache-types-guide/</loc><lastmod>2026-02-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/health-anxiety-guide.html</loc><lastmod>2026-08-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/night-sweats-causes-when-to-worry/</loc><lastmod>2026-08-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/numbness-tingling-causes/</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/red-flag-symptoms.html</loc><lastmod>2026-08-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/symptom-checker-limitations.html</loc><lastmod>2026-08-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/symptom-journaling-guide.html</loc><lastmod>2026-08-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/when-to-see-a-doctor.html</loc><lastmod>2026-08-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://symptom.md/blog/when-to-see-doctor-warning-signs/</loc><lastmod>2026-02-14</lastmod><priority>0.7</priority></url>
 </urlset>
