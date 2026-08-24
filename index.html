@@ -1236,6 +1236,9 @@
                 <h4>About</h4>
                 <a href="https://thrive.md/editorial-policy.html">Editorial Policy</a>
                 <a href="https://thrive.md/medical-review.html">Medical Review</a>
+                <a href="https://thrive.md/disclaimer.html">Medical Disclaimer</a>
+                <a href="https://thrive.md/privacy.html">Privacy</a>
+                <a href="https://thrive.md/terms.html">Terms</a>
                 <a href="mailto:hello@thrive.md">Contact</a>
                 <div class="footer-links">
                 <h4>Related Topics</h4>
@@ -1408,12 +1411,6 @@
                 }
                 
                 
-                // Track query (client-side)
-                fetch('https://mikes-mac-mini.platy-paradise.ts.net:18791/api/track', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json', 'X-API-Key': '3460683416d20694dc8f05cdb01af378' },
-                    body: JSON.stringify({ site: 'symptom.md', query: question, response: (fullText || fullResponse || '').slice(0, 500), session_id: SESSION_ID || null }),
-                }).catch(() => {});
                 // GA4 engagement events (reduces bounce rate)
                 if (typeof gtag === 'function') {
                   gtag('event', 'qa_question_asked', { event_category: 'Q&A', event_label: 'symptom.md', value: 1 });
